@@ -1,8 +1,7 @@
 #include <Servo.h>
 int goodWidgets = 0;
 int badWidgets = 0;
-const int separationAngle = 30;
-const int greenLEDpins[3] = {13, 12, 8};
+const int greenLEDpins[3] = {7, 12, 8};
 const int redLEDpins[3] = {A2, A3, A4};
 const int rgbLEDpins[3] = {9, 10, 11};
 const int servoPins[2] = {A0, A1};
@@ -12,8 +11,8 @@ int previousValue = 0; // the seperate input value for the widget counts. First 
 int widgets = 0;
 Servo flipperStopper;
 Servo flipperFlopper;
-const int flipperFlopperAngle = 25;
-const int flipperFlopperStart = 0;
+const int goodWidgetAngle = 108;
+const int badWidgetAngle = 54;
 
 void setup() {
   pinMode(actuatorPins[0], OUTPUT);
@@ -37,7 +36,7 @@ void setup() {
   flipperStopper.attach(servoPins[0]);
   flipperFlopper.attach(servoPins[1]);
   flipperStopper.write(0);
-  flipperFlopper.write(flipperFlopperStart);
+  flipperFlopper.write(badWidgetAngle);
   Serial.begin(9600);
   Serial.println("READY");
   if (digitalRead(switchPin) == HIGH) {
@@ -49,58 +48,54 @@ void loop() {
   if (digitalRead(switchPin) == HIGH) {
     extendActuator(); // push widget into camera zone
     Serial.println("CAPTURE");
-    Serial.parseInt();
-    int widgets = Serial.parseInt(); //widgets is the next value sent to the serial. First integer is good widget count, second is bad widget count     
-    Serial.println(widgets); // for testing purposes only
-    incrementWidgetCount(widgets); // increase the count of widgets and classify as good or bad
-    flipperStopperUp(); //allow widget to pass into sorting block
+    widgets = Serial.parseInt(); //widgets is the next value sent to the serial. First integer is good widget count, second is bad widget count     
+    incrementWidgetCount(widgets, rgbLEDpins[0], rgbLEDpins[1], rgbLEDpins[2]); // increase the count of widgets and classify as good or bad
     retractActuator(); // retract actuator in preparation for next widget
     flipperStopperDown(); //lower flipperStopper in preparation for next widget
-    binaryDisplay(); // update the binary display
-    flipperFlopper.write(flipperFlopperStart); // reset flipperFlopper
+    binaryDisplay(goodWidgets, badWidgets); // update the binary display
+    flipperFlopper.write(badWidgetAngle); // reset flipperFlopper
   } else {
-    stop();
+    retractActuator();
+    stop(0, rgbLEDpins[0], rgbLEDpins[1], rgbLEDpins[2]);
   }
 }
-void incrementWidgetCount(int widgets) {
+void incrementWidgetCount(int widgets, int redPin, int greenPin, int bluePin) {
   if (widgets == previousValue+1) {
     // this is a bad widget
     badWidgets++;
     delay(500);
-    analogWrite(rgbLEDpins[0], 175);
-    analogWrite(rgbLEDpins[1], 0);
-    analogWrite(rgbLEDpins[2], 0);
+    analogWrite(redPin, 255);
+    analogWrite(greenPin, 0);
+    analogWrite(bluePin, 0);
     flipperFlopperRotation(0);
+    delay(500);
+    flipperStopperUp(); //allow widget to pass into sorting block
   } else if (widgets == previousValue+10) {
   	// this is a good widget
     goodWidgets++;
     delay(500);
-    analogWrite(rgbLEDpins[0], 0);
-    analogWrite(rgbLEDpins[1], 175);
-    analogWrite(rgbLEDpins[2], 0);
+    analogWrite(redPin, 0);
+    analogWrite(greenPin, 255);
+    analogWrite(bluePin, 0);
     flipperFlopperRotation(1);
+    delay(500);
+    flipperStopperUp(); //allow widget to pass into sorting block
   } else if ((widgets == previousValue) and (widgets > 0)) {
     // no widget
-    if ((goodWidgets + badWidgets) < 10) {
-      analogWrite(rgbLEDpins[0], 0);
-      analogWrite(rgbLEDpins[1], 0);
-      analogWrite(rgbLEDpins[2], 0);
-      delay(500);
-      analogWrite(rgbLEDpins[0], 150);
-      analogWrite(rgbLEDpins[1], 0);
-      analogWrite(rgbLEDpins[2], 150);
+    if (widgets < 55) {
+      retractActuator();
+      stop(1, rgbLEDpins[0], rgbLEDpins[1], rgbLEDpins[2]);
     }
   }
   if (widgets > 0) {
     previousValue = widgets; //update "previous"
   }
+
+  
 }
-void binaryDisplay() {
+void binaryDisplay(int goodWidgetCountForBinary, int badWidgetCountForBinary) {
   int binaryGood[3];
   int binaryBad[3];
-  
-  int goodWidgetCountForBinary = goodWidgets;
-  int badWidgetCountForBinary = badWidgets;
  
   //decimal to binary
   for (int i = 0; i < 3; i++) {
@@ -156,10 +151,11 @@ void retractActuator() {
 void flipperFlopperRotation(int widgetType) {
   if (widgetType == 1) {
     // this is a good widget
-    flipperFlopper.write(flipperFlopperStart - flipperFlopperAngle);
+    flipperFlopper.write(goodWidgetAngle);
    } else if (widgetType == 0) {
     // this is a bad widget
-    flipperFlopper.write(flipperFlopperStart + flipperFlopperAngle);
+    flipperFlopper.write(badWidgetAngle);
+   
    }
 }
 void indicateActiveAndReady() {
@@ -169,9 +165,9 @@ void indicateActiveAndReady() {
   digitalWrite(redLEDpins[0], HIGH);
   digitalWrite(redLEDpins[1], HIGH);
   digitalWrite(redLEDpins[2], HIGH);
-  analogWrite(rgbLEDpins[0], 100);
-  analogWrite(rgbLEDpins[1], 100);
-  analogWrite(rgbLEDpins[2], 100);
+  analogWrite(rgbLEDpins[0], 255);
+  analogWrite(rgbLEDpins[1], 255);
+  analogWrite(rgbLEDpins[2], 255);
   delay(1000);
   digitalWrite(greenLEDpins[0], LOW);
   digitalWrite(greenLEDpins[1], LOW);
@@ -184,19 +180,24 @@ void indicateActiveAndReady() {
   analogWrite(rgbLEDpins[2], 0);
   delay(500);
 }
-void stop(){
-  digitalWrite(actuatorPins[2], LOW);
-  digitalWrite(actuatorPins[1], LOW);
-  analogWrite(actuatorPins[0], 0);
-  goodWidgets = 0;
-  badWidgets = 0;
-  digitalWrite(greenLEDpins[0], LOW);
-  digitalWrite(greenLEDpins[1], LOW);
-  digitalWrite(greenLEDpins[2], LOW);
-  digitalWrite(redLEDpins[0], LOW);
-  digitalWrite(redLEDpins[1], LOW);
-  digitalWrite(redLEDpins[2], LOW);
-  analogWrite(rgbLEDpins[0], 0);
-  analogWrite(rgbLEDpins[1], 0);
-  analogWrite(rgbLEDpins[2], 0);
+void stop(int hasYellow, int redPin, int greenPin, int bluePin){
+  while (true) {
+    digitalWrite(actuatorPins[2], LOW);
+    digitalWrite(actuatorPins[1], LOW);
+    analogWrite(actuatorPins[0], 0);
+    goodWidgets = 0;
+    badWidgets = 0;
+    if (hasYellow == 1) {
+      analogWrite(redPin, 255);
+      analogWrite(greenPin, 255);
+      analogWrite(bluePin, 10);
+    } else if (hasYellow == 0) {
+      digitalWrite(greenLEDpins[0], LOW);
+      digitalWrite(greenLEDpins[1], LOW);
+      digitalWrite(greenLEDpins[2], LOW);
+      digitalWrite(redLEDpins[0], LOW);
+      digitalWrite(redLEDpins[1], LOW);
+      digitalWrite(redLEDpins[2], LOW);
+    }
+  }
 }
