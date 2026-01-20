@@ -21,7 +21,10 @@ placeholder
 [Arduino Code](code/motor_control.ino)
 
 ## Any CAD models used in the project - include screen captures and a link to your drawing files
-placeholder
+### [Onshape Link](https://cad.onshape.com/documents/1959d45d93e06fd605dded79/w/4b29a523473d3687186c98d2/e/b105ef3a0426237b67d9fdd4)  
+[STL Files](CAD/stl-files)  
+[Laser Cut Files](CAD/laser-files)  
+[CNC Files](CAD/cnc-files)
 
 ## Photos of the project
 placeholder
