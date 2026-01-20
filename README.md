@@ -14,7 +14,7 @@ This widget sorter was designed, built, and tested by Noah, Yarema, and Markus, 
 
 Machining was done using equipment in the Southridge High School Engineering Lab, including
 - A Carvera CNC
-- A Pruska Mk3 3D-Printer
+- A Prusa Mk3 3D-Printer
 - A Laser Cutter
 
 All CAD was done in OnShape 
