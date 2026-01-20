@@ -79,6 +79,8 @@ void incrementWidgetCount(int widgets, int redPin, int greenPin, int bluePin) {
     flipperFlopperRotation(0);
     delay(500);
     flipperStopperUp(); //allow widget to pass into sorting block
+    delay(2500);
+    flipperFlopper.write(flopperStart);
   } else if (widgets == previousValue+10) {
   	// this is a good widget
     goodWidgets++;
@@ -86,9 +88,11 @@ void incrementWidgetCount(int widgets, int redPin, int greenPin, int bluePin) {
     analogWrite(redPin, 0);
     analogWrite(greenPin, 255);
     analogWrite(bluePin, 0);
-    flipperFlopperRotation(1);
+    flipperFlopperRotation(0);
     delay(500);
     flipperStopperUp(); //allow widget to pass into sorting block
+    delay(2500);
+    flipperFlopper.write(flopperStart);
   } else if ((widgets == previousValue) and (widgets > 0)) {
     // no widget
     if (widgets < 55) {
