@@ -17,7 +17,7 @@ placeholder
 placeholder
 
 # A program including header and comments
-[Widget Detection Pi Code](code/widget_inspector.py)
+[Widget Detection Pi Code](code/widget_inspector.py)  
 [Arduino Code](code/motor_control.ino)
 
 # Any CAD models used in the project - include screen captures and a link to your drawing files
