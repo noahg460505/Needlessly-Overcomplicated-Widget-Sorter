@@ -30,7 +30,7 @@ The Linear Actuator and Loctite used in this project were acquired through out-o
 Ensure that all LEDs on the Arduino are connected properly. This can be tested by uploading the code to the Arduino; if the wiring is successful, the LEDs should all light up. 
 
 A standard microUSB should be connected from the Pi at port `USB0` into the Arduino. From the power strip, a 12v power supply should be connected. 
-The Pi should be connected to a keyboard and monitor. We recommend using KDE Connect so that coding can be done from multiple devices. 
+The Pi should be connected to a keyboard and monitor. We recommend using KDE Connect so that coding can be done from another device and copy-pasted into the Pi, as the Pi 3B+ is a bit slow for using an IDE, even one as simple as Thonny.
 
 # Sorting
 
