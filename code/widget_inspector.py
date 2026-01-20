@@ -10,7 +10,7 @@ Usage:
   python3 widget_inspector.py --manual           # Manual testing mode
   python3 widget_inspector.py --port /dev/ttyUSB0  # Specify Arduino port
 
-Vast majority of code by Claude 4.5 Sonnett, with edits by Keegan Smit and Noah Grimes  
+Vast majority of code by Claude Sonnett 4.5, with edits by Keegan Smit and Noah Grimes  
 """
 
 import cv2
