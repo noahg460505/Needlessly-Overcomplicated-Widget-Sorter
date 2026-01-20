@@ -3,10 +3,10 @@ Portfolio for our widget sorter project
 
 # Table of Contents
 
-1. [Acknowledgments](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/README.md#acknowledgements)
-2. [Setup](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/README.md#setup)
-3. [Sorting](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/README.md#sorting)
-4. [AI Acknowledgment](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/README.md#ai-acknowledgment)
+1. [Acknowledgments](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/README.md#acknowledgements)
+2. [Setup](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/README.md#setup)
+3. [Sorting](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/README.md#sorting)
+4. [AI Acknowledgment](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/README.md#ai-acknowledgment)
 
 # Acknowledgements
 
