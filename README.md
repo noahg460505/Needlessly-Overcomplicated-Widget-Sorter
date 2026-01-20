@@ -10,7 +10,7 @@ Portfolio for our widget sorter project
 
 # Acknowledgements
 
-This widget sorter was designed, built, and tested by Noah, Yarema, and Markus, with help from Keegan, Nolan, and Claude Sonnet. 
+This widget sorter was designed, built, and tested by Noah Grimes, Yarema Mushkevych, and Markus Walker, with help from Keegan Smit, Nolan Thurman, and Claude Sonnet 4.5. Equipment was provided by Mr. Small and Mr. Cronk. 
 
 Machining was done using equipment in the Southridge High School Engineering Lab, including
 - A Carvera CNC
