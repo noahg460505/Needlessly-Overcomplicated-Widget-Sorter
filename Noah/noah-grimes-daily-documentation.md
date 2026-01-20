@@ -41,7 +41,7 @@ Today I was struggling wayyyy too much to make finger joints for the sorting bin
 # Day 10
 ## 12/17/25
 At the beginning of class we got the flipper stopper, which Markus designed). During class, we assembled the sorting bins with wood glue. We also cut out the servo mounting bracket for the flipper flopper. Not much else done this class, we had the OSU engineering presentation today. During seminar, I was able to do the last bits of CAD for the whole structure. I designed some MDF cross members to support the structure, and we got those all cut out on the laser cutter. Virtually everything is now ready to be manufactured and assembled now, yippee!
-![CAD Overview](CAD-Screenshots/cad_overview_screenshot.png)
+![CAD Overview](../CAD-Screenshots/cad_overview_screenshot.png)
 
 # Day 11
 ## 12/19/25
