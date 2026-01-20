@@ -1,0 +1,39 @@
+# Day one 11/12/2025
+Today I am starting to work on thinking about how the widget sorter is going to function. We first started thinking how we would sense if the widget is good or bad. The way we thought about how to do this was to take a picture and use machine learning to determine whether the widget is good or bad. This would effectively be a slide that would drop the widgets down, take a picture, determine if they are good or bad, and put them in the corresponding bucket. We want to make this project with the lowest amount of moving parts so less things would go wrong. In total there would be just something to make the widgets fall and something to make it go into a bucket. Today ended up being mostly a planning phase and helping Noah a little bit with the useless box.
+# Day two 11/14/2025
+Today we got the raspberry pi to work and connect to a monitor, keyboard, mouse, and web cam. Then once everything was working on the raspberry pi we started working on how to make code that could determine the difference between a good and bad widget by detecting a hole in the good widget and no hole as a bad widget. The problem with this is that the program thinks that the absence of a widget is a bad widget because it is just looking for holes so we need to fix that later. 
+# Day three 11/18/2025
+We continued planning how the widget sorter would work and we decided that we would have a process where a widget would be pushed out of a magazine onto an acrylic slide where it would hit a stopper, have a picture taken, and go into the correct spot based on what the program saw. We also got the program to tell if there is a good widget bad widget or not a widget. 
+# Day four 11/20/25
+Today we were working on the way that we would hold the widgets and make them go down the slide we were talking about earlier. We get the widget magazine printed that we designed last class but it has problems with how easily the widgets would come out of the magazine so we are now making a modular version of the magazine so it would take less time to print. We also started making plans for what the finished project would look like. 
+# Day five 12/1/25
+Today we are working on trying to find how we would make the body of the sorter and fit all of the pieces together that we need such as a linear actuator being included behind the widget mag. This is mostly a planning day with a little bit used to work on the cad for the sorter,mostly by Noah.
+# Day six 12/3/25
+We just got our linear actuator for pushing the widgets out of the widget mag today. I worked mostly on seeing if and how the linear actuator would fit into the project and work. So I mostly worked on the housing of the for the linear actuator and seeing how it extends and contracts. Noah also worked on the designs for the project and Yarema worked on the arduino code or the lights.
+
+
+# Day seven 12/5/25
+I again worked on the housing for the linear actuator because the previous design was messed up and was not made to the right size for the end of the actuator. So I fixed the design a little bit so it would work better for what we need it to do and added another set of mounting holes. That is about all that I did today.
+# Day eight 12/9/25
+I mostly just worked on some very minor things such as a mounting bracket for a servo motor. We were also just thinking about how the widget sorter would work and how we would be able to put together and build it. Yarema also got the linear actuator working with the red board so we are starting to get physical parts working on the project.
+# Day nine 12/11/25
+Today was mostly changing small things like adding 2 millimeters to the bottom of the widget mag and testing it to make sure that it would work with the linear actuator. Yarema also kept working on the arduino code for the binary lights and the motors. We now just need to start cutting things out and putting them together. 
+# Day ten 12/15/25
+Today was mostly getting small parts of the widget sorter to work and to make sure that it would work if we cut out the different parts of the widget sorter and put them together. I worked on planning where things would go and designing a flipper stopper to stop the widgets as they go down the slope. 
+# Day eleven 12/17/25
+Today in class we mostly listened to a presentation from a pair of engineering students from OSU. We did the rest of the things that needed to finish the engineering project and now we are starting to make the physical project itself. We mostly use the laser to cut out the main body of the widget sorter. 
+# Day twelve 12/19/25
+Today we did a very large amount of laser cutting getting every part for the body of the box. We cut out the two large side panels, the support box top and bottom and some support brackets. Yarema also finished the code and all that is left is to put everything together, do some final testing, and we should be done. 
+# Day thirteen 1/7/26
+Today we got back to work on the widget sorter after 2 weeks of winter break. We spent most of the day working on getting the ramp made so we can finally put together the final product and start making it work the way it is supposed to. We finished cutting out the shape of the ramp on the laser cutter and left class with almost being ready to cut out the partial depth holes on the CNC. We are planning on getting the cut on the CNC done in seminar and starting to get everything glued together. I also finished gluing the support box for the structure.
+# Day fourteen 1/9/26
+Today we kept working on the ramp for the widget sorter because when cutting it out with the CNC I gave slightly incorrect dimensions and it was off center. Now we are recutting the ramp to the right size. Cutting out the ramp is everything we have done today.
+
+
+
+# Day fifteen 1/13/26
+Today is the second to last day we have to work on the widget sorter. The ramp was cut out on the CNC (thank you Mr. Small) and now we are able to put everything together and start seeing how the sorter will work. We are using the python code that was generated by an LLM during the first few days we were working on this project. The code is not working at the moment because the AI either messes with the circle detection code or the circle placement code. This means either it detects where the circle is and thinks it is in the wrong place, or it can’t detect the circle which we will work on fixing during the seminar. 
+# Day sixteen 1/15/26
+Today we are mostly trying to get everything done and working but the arduino code is being worked on in order to get the motors and timings correct. The code on the Pi is working as it should be and always seeing the widgets as they should be. We hope to have the widget sorter done in seminar so that it works in the proper way. 
+# Day seventeen last day 1/19/26
+I went to Noah’s house at 9:30am to work on the widget sorter and make sure that it was ready and worked as it should. We got it working consistently with the 2 test widgets we were using, meaning we went on to gluing everything together and sanding parts that did not work according to plan. 
