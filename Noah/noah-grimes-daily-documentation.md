@@ -4,7 +4,7 @@ Today, we began some basic planning, I was still working on my box, but we were 
 
 # Day 1
 ## 11/14/25
-Yesterday, I flashed a Raspbian ISO onto a microSD card that Cronk gave me, then today I went to Cronk’s classroom to grab a Pi 3B+. Today during class we got a monitor, keyboard, and mouse that were going to be thrown out with the old engineering computers. We set up a little area in the corner of the room with the Pi, monitor, keyboard, and mouse and began working on our project. After all this was done, class was basically over, so we came in during seminar to work. We started with a quick feasibility test, we had Claude 4.5 Sonnet generate some testing code, it worked pretty well, and even better when using a flashlight placed right above the camera, putting the flashlight to the side created shadows that made the recognition unreliable.
+Yesterday, I flashed a Raspbian ISO onto a microSD card that Cronk gave me, then today I went to Cronk’s classroom to grab a Pi 3B+. Today during class we got a monitor, keyboard, and mouse that were going to be thrown out with the old engineering computers. We set up a little area in the corner of the room with the Pi, monitor, keyboard, and mouse and began working on our project. After all this was done, class was basically over, so we came in during seminar to work. We started with a quick feasibility test, we had Claude Sonnet 4.5 generate some testing code, it worked pretty well, and even better when using a flashlight placed right above the camera, putting the flashlight to the side created shadows that made the recognition unreliable.
 
 # Day 2
 ## 11/18/25
@@ -41,6 +41,7 @@ Today I was struggling wayyyy too much to make finger joints for the sorting bin
 # Day 10
 ## 12/17/25
 At the beginning of class we got the flipper stopper, which Markus designed). During class, we assembled the sorting bins with wood glue. We also cut out the servo mounting bracket for the flipper flopper. Not much else done this class, we had the OSU engineering presentation today. During seminar, I was able to do the last bits of CAD for the whole structure. I designed some MDF cross members to support the structure, and we got those all cut out on the laser cutter. Virtually everything is now ready to be manufactured and assembled now, yippee!
+![CAD Overview](CAD-Screenshots/cad_overview_screenshot.png)
 
 # Day 11
 ## 12/19/25
