@@ -8,11 +8,12 @@ const int servoPins[2] = {A0, A1};
 const int switchPin = 5;
 const int actuatorPins[3] = {4,3,2};
 int previousValue = 0; // the seperate input value for the widget counts. First integer is good widget count, second is bad widget count
-int widgets = 0;
+int widgets = -1;
 Servo flipperStopper;
 Servo flipperFlopper;
-const int goodWidgetAngle = 108;
-const int badWidgetAngle = 54;
+const int goodWidgetAngle = 0;
+const int badWidgetAngle = 60;
+const int flopperStart = 30;
 
 void setup() {
   pinMode(actuatorPins[0], OUTPUT);
@@ -42,20 +43,28 @@ void setup() {
   if (digitalRead(switchPin) == HIGH) {
     indicateActiveAndReady();
   }
+  delay(3000);
 }
 
 void loop() {
   if (digitalRead(switchPin) == HIGH) {
-    extendActuator(); // push widget into camera zone
+    if (widgets != 0) {
+      extendActuator(); // push widget into camera zone
+      retractActuator(); // retract actuator in preparation for next widget
+    }
     Serial.println("CAPTURE");
-    widgets = Serial.parseInt(); //widgets is the next value sent to the serial. First integer is good widget count, second is bad widget count     
-    incrementWidgetCount(widgets, rgbLEDpins[0], rgbLEDpins[1], rgbLEDpins[2]); // increase the count of widgets and classify as good or bad
-    retractActuator(); // retract actuator in preparation for next widget
-    flipperStopperDown(); //lower flipperStopper in preparation for next widget
-    binaryDisplay(goodWidgets, badWidgets); // update the binary display
-    flipperFlopper.write(badWidgetAngle); // reset flipperFlopper
+    widgets = Serial.parseInt(); //widgets is the next value sent to the serial. First integer is good widget count, second is bad widget count 
+    if (widgets != 0) {    
+      incrementWidgetCount(widgets, rgbLEDpins[0], rgbLEDpins[1], rgbLEDpins[2]); // increase the count of widgets and classify as good or bad    if (widgets != 0) {
+      flipperStopperDown(); //lower flipperStopper in preparation for next widget
+      binaryDisplay(goodWidgets, badWidgets); // update the binary display
+      flipperFlopper.write(flopperStart); // reset flipperFlopper
+    } else {
+      retractActuator(); 
+    }
   } else {
     retractActuator();
+    delay(1500);
     stop(0, rgbLEDpins[0], rgbLEDpins[1], rgbLEDpins[2]);
   }
 }
@@ -155,7 +164,6 @@ void flipperFlopperRotation(int widgetType) {
    } else if (widgetType == 0) {
     // this is a bad widget
     flipperFlopper.write(badWidgetAngle);
-   
    }
 }
 void indicateActiveAndReady() {
