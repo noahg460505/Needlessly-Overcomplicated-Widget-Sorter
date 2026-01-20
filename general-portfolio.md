@@ -26,6 +26,8 @@ placeholder
 [Laser Cut Files](CAD/laser-files)  
 [CNC Files](CAD/cnc-files)
 
+![CAD Overview](CAD/CAD-Screenshots/cad_overview_screenshot.png)
+
 ## Photos of the project
 placeholder
 
