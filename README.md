@@ -38,4 +38,4 @@ Start by turning on the Arduino and ensuring that it is fully active. Let the Ar
 
 # AI Acknowledgement
 
-A part of the code for this project was designed by Claude Sonnet, which is known to make mistakes. Any peoples using this code are advised to check the program they are running. 
+The vast majority of [the Python code](code/widget_inspector.py) for this project was done by Claude Sonnet 4.5, with edits made by Noah Grimes and Keegan Smit.
