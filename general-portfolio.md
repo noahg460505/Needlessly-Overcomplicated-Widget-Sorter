@@ -30,7 +30,7 @@ The goal for this project was to make a device which would differentiate, sort, 
 - Keyboard 
 - Mouse
 - Monitor
-- 100mm Linear actuator 
+- [100mm Linear actuator](https://www.amazon.com/Electric-High-Speed-sec-Weight-Intelligent-Automation/dp/B07ZJ46947/ref=sr_1_14?th=1) 
 - 2 Servo Motors
 - Mounting hardware that works for you parts
 - PLA for the prints
