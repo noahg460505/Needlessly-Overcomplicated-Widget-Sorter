@@ -1,1 +1,13 @@
+# Markus’ Widget Sorter Reflection 
 
+## My work on the widget sorter
+I worked on the logistics, cutting/printing parts out, and minor amounts of CAD. Logistics include planning how we would detect widgets, finding the workable dimensions for the parts that we made, and finding how to fix problems that arise. I spent a large amount of my time around the middle of the assignment taking the files from the CAD that [Noah](Noah) was working on using the laser cutter or printer to make it then see how it works with other things we made. The minor amounts of CAD that I worked on were the [flipper stopper](CAD/stl-files/flipper_stopper.stl), [linear actuator housing](CAD/stl-files/linear-actuator-housing.stl), the [servo mounting bracket](CAD/laser-files/servo-motor-bracket.dxf), and the first version of the [widget mag](CAD/stl-files/widget-mag-v2.3.stl).
+
+## What challenges did you have to overcome?
+The project was relatively straight forward apart from the lack of time we had and problems with making parts. Every class and every advisory we worked on the widget sorter and even then we had to take it home in order to finish it. We did end up making it so that it would function in a mostly consistent way on Monday 1/19/2026 after around 3.5 hours of work. The second challenge that we had to overcome was issues with measurements and use of tools. An example of this was that I mistakenly gave Mr. Small the wrong measurements on a part we needed to use the CNC on making that part eventually take 2 days to complete. With the dedication of Mr. Small finding out what was wrong and fixing the issue we were able to complete the project in a reasonable amount of time. 
+
+## What would you do differently? 
+I wish that when working on this project I had the skill to design CAD in a more efficient and timely manner. I didn’t have the technical ability at the time to make a widget sorter that was segmented and be able to do it during a class, this is why I am very happy that Noah was able to do that. Another thing that I could have done differently was do more of the technical operations relating to the raspberry pi and arduino but I left that to the more experienced [Noah](Noah) and [Yarema](Yarema).
+
+## What Did I Learn In Project 1 That I Applied To Project 2?
+During the widget sorter project I learned that it was very valuable to make the CAD of the object that you are planning to make before you actually make the box itself. This design that we had for the widget sorter was very useful for making sure that everything fit together how it should and allowed for changes along the way.
