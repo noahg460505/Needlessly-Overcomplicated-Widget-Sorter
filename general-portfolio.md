@@ -5,10 +5,15 @@ This is the shared portfolio for all of us, containing the parts of the portfoli
 placeholder
 
 ## An outline of your project
-placeholder
+![Flowchart](Diagrams/Widget_Sorter_FlowChart.jpeg)
 
 ## A wiring diagram - this could be hand drawn, made using software, a tinkerCAD link, etc
-placeholder
+
+![Wiring Diagram A](Diagrams/wiring_a.png)
+
+![Wiring Diagram B](Diagrams/wiring_b.png)
+
+![Fritzing](Diagrams/fritzing.png)
 
 ## A set of mechanical drawings showing components, assembly, and hardware.
 placeholder
@@ -32,7 +37,15 @@ placeholder
 placeholder
 
 ## A video of it working
-placeholder
+
+![Prototype Test](photos-videos/prototype_test.mp4)
+
+## Reflections
+[Markus Walker](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/Markus/markus-walker-reflection.md)
+
+[Noah Grimes](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/Noah/noah-grimes-reflection.md)
+
+[Yarema Mushkevych](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/Yarema/yarema-mushkevych-reflection.md)
 
 ## Any needed citations of sources
 placeholder
