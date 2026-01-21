@@ -7,7 +7,7 @@ We continued planning how the widget sorter would work and we decided that we wo
 # Day four 11/20/25
 Today we were working on the way that we would hold the widgets and make them go down the slide we were talking about earlier. We get the widget magazine printed that we designed last class but it has problems with how easily the widgets would come out of the magazine so we are now making a modular version of the magazine so it would take less time to print. We also started making plans for what the finished project would look like. 
 # Day five 12/1/25
-Today we are working on trying to find how we would make the body of the sorter and fit all of the pieces together that we need such as a linear actuator being included behind the widget mag. This is mostly a planning day with a little bit used to work on the cad for the sorter,mostly by Noah.
+Today we are working on trying to find how we would make the body of the sorter and fit all of the pieces together that we need such as a linear actuator being included behind the widget mag. This is mostly a planning day with a little bit used to work on the cad for the sorter, mostly by Noah.
 # Day six 12/3/25
 We just got our linear actuator for pushing the widgets out of the widget mag today. I worked mostly on seeing if and how the linear actuator would fit into the project and work. So I mostly worked on the housing of the for the linear actuator and seeing how it extends and contracts. Noah also worked on the designs for the project and Yarema worked on the arduino code or the lights.
 # Day seven 12/5/25
