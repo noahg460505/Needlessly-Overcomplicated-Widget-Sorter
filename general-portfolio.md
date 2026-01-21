@@ -32,17 +32,17 @@ The goal for this project was to make a device which would differentiate, sort, 
 - Monitor
 - [100mm Linear actuator](https://www.amazon.com/Electric-High-Speed-sec-Weight-Intelligent-Automation/dp/B07ZJ46947/ref=sr_1_14?th=1) 
 - 2 Servo Motors
-- Mounting hardware that works for you parts
+- Mounting hardware (various metric bolts)
 - PLA for the prints
 - 3mm wood or mdf for structure
 - Arduino
 - Breadboard 
 - Switch 
-- 3 red and 3 blue diodes
-- RGB diode
+- 3 red and 3 blue LED
+- RGB LED
 - Switch 
 - Motor controller
-- Many wires
+- Many wires w/ Dupont connectors
 
 
 ## A program including header and comments
