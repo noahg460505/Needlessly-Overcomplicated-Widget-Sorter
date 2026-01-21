@@ -2,7 +2,7 @@
 This is the shared portfolio for all of us, containing the parts of the portfolio that don't differ between members of the group
 
 ## A description of the project requirements and constraints
-placeholder
+The goal for this project was to make a device which would differentiate, sort, and count widgets based on if they have holes or not. [Good widgets](CAD/stl-files/good-widget.stl) are 3-dimensional rectangular shapes that have an off centered hole going through them and bad widgets are missing a hole. We have to load 5 good and 5 bad widgets at random and the sorter needs to count them, sort them, and know when it is done counting them after a single button press. 
 
 ## An outline of your project
 ![Flowchart](Diagrams/Widget_Sorter_FlowChart.jpeg)
@@ -16,10 +16,34 @@ placeholder
 ![Fritzing](Diagrams/fritzing.png)
 
 ## A set of mechanical drawings showing components, assembly, and hardware.
-placeholder
+![Widget Action](CAD/CAD-Screenshots/widget_mag_screenshot.png)
+
+![Widget MagV2.3](CAD/stl-files/widget-mag-v2.3.stl)
+
+![Flipper Flopper](CAD/CAD-Screenshots/flipper_flopper_screenshot.png)
+
+![Flipper Stopper](CAD/stl-files/flipper_stopper.stl)
 
 ## A parts list
-placeholder
+- Camera 
+- Raspberry Pi
+- Keyboard 
+- Mouse
+- Monitor
+- 100mm Linear actuator 
+- 2 Servo Motors
+- Mounting hardware that works for you parts
+- PLA for the prints
+- 3mm wood or mdf for structure
+- Arduino
+- Breadboard 
+- Switch 
+- 3 red and 3 blue diodes
+- RGB diode
+- Switch 
+- Motor controller
+- Many wires
+
 
 ## A program including header and comments
 [Widget Detection Pi Code](code/widget_inspector.py)  
@@ -33,9 +57,18 @@ placeholder
 
 ![CAD Overview](CAD/CAD-Screenshots/cad_overview_screenshot.png)
 
-## Photos of the project
-placeholder
+![Full Cad](CAD/stl-files/full-assembly.stl)
 
+## Photos of the project
+![Starting Plan](photos-videos/initial_drawing.jpg)
+
+![Pi Setup](photos-videos/setup_1.jpg)
+
+![Parts Laid Out](photos-videos/box_pieces.jpg)
+
+![Prodotype Rig](photos-videos/prototype_rig.jpg)
+
+![Final Rig](photos-videos/final_sorter_front.jpg)
 ## A video of it working
 
 ![Prototype Test](photos-videos/prototype_test.mp4)
