@@ -74,11 +74,20 @@ The goal for this project was to make a device which would differentiate, sort, 
 ![Prototype Test](photos-videos/prototype_test.mp4)
 
 ## Reflections
-[Markus Walker](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/Markus/markus-walker-reflection.md)
+[Markus Walker](Markus/markus-walker-reflection.md)
 
-[Noah Grimes](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/Noah/noah-grimes-reflection.md)
+[Noah Grimes](Noah/noah-grimes-reflection.md)
 
-[Yarema Mushkevych](https://github.com/noahg460505/Needlessly-Overcomplicated-Widget-Sorter/blob/main/Yarema/yarema-mushkevych-reflection.md)
+[Yarema Mushkevych](Yarema/yarema-mushkevych-reflection.md)
 
 ## Any needed citations of sources
-placeholder
+
+[Tinkercad Circuits Designer](https://tinkercad.com/circuits)
+[Claude Sonnet](https://claud.ai)
+[Arduino Forum](https://forum.arduino.cc)
+[Onshape](https://cad.onshape.com)
+[Download link for Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
+[Thonny Download](https://thonny.org/)
+[KDE Connect Download](https://kdeconnect.kde.org/download.html)
+[Python Download](https://www.python.org/)
+
