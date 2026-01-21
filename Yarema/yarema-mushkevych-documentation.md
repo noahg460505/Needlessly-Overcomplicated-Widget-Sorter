@@ -6,15 +6,27 @@ NOTE: Documentation isn’t 100% accurate. Some info may be missing from certain
 
 Today, I wrote rudimentary Arduino code in TinkerCAD to detect input to the serial monitor. I designed a basic decimal to binary converter and began implementing the LEDs for the binary
 
+![Wiring](Diagrams/12_1-Wiring.png)
+
+![Fritzing](Diagrams/12_1-Fritzing.png)
+
 ## Day 2 — 12/3/2025
 
 Today, I rewired the TinkerCAD BreadBoard to fit more components. Because we’re cool and using a binary display, the LEDs take up a lot of space and RedBoard pins, so the more space we can use, the better. Using the servo.h library, I added functionality to a motor — it spins one way if the widget is good (serial monitor receives a 1) and another way if it is bad (serial monitor receives a 0) — and wired it up to the BreadBoard. I also implemented a switch that turns the entire setup on and off.
 
 Today, Markus brought in his Linear Actuator, which is basically a gearmotor with fancy parts. Using the gearmotor design in TinkerCAD and a motor controller, I simulated a linear actuator. Currently, it’s only set to spin while the sorter is active. Next time I work on it, I’ll make it turn on and off based on a signal. 
 
+![Wiring](Diagrams/12_3-Wiring.png)
+
+![Fritzing](Diagrams/12_3-Fritzing.png)
+
 ## Day 3 — 12/5/2025
 
 Today, I reworked the code for detecting a new widget. Now, it receives a 2-digit value; the 10’s place is the number of good widgets and the 1’s place is the number of bad widgets. I added functionality for an extra servo to hold the widgets in place while the camera will take a photo.  
+
+![Wiring](Diagrams/12_5-Wiring.png)
+
+![Fritzing](Diagrams/12_5-Fritzing.png)
 
 ## Day 4 — 12/9/2025
 
@@ -35,6 +47,10 @@ Today we listened to a presentation from OSU. I converted the code into function
 ## Day 8 — 12/19/2025
 
 This was the last work day before break. I finished the code, but will still need to test it with the completed sorter body. 
+
+![Wiring](Diagrams/12_19-Wiring.png)
+
+![Fritzing](Diagrams/12_19-Fritzing.png)
 
 ## Day 9 — 1/7/2026
 
