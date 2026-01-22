@@ -1,6 +1,7 @@
 # Day 0
 ## 11/12/25
-Today, we began some basic planning, I was still working on my box, but we were working on coming up with ideas. We decided that instead of doing something BORING and SIMPLE, we would use a webcam attached to a Raspberry Pi and do image recognition of good and bad widgets. While this is more complicated and requires more programming, it will actually make the mechanics significantly easier.
+Today, we began some basic planning, I was still working on my box, but we were working on coming up with ideas. We decided that instead of doing something BORING and SIMPLE, we would use a webcam attached to a Raspberry Pi and do image recognition of good and bad widgets. While this is more complicated and requires more programming, it will actually make the mechanics significantly easier.  
+![Initial Drawing](../photos-videos/initial_drawing.jpg)  
 
 # Day 1
 ## 11/14/25
@@ -40,7 +41,7 @@ Today I was struggling wayyyy too much to make finger joints for the sorting bin
 
 # Day 10
 ## 12/17/25
-At the beginning of class we got the flipper stopper, which Markus designed). During class, we assembled the sorting bins with wood glue. We also cut out the servo mounting bracket for the flipper flopper. Not much else done this class, we had the OSU engineering presentation today. During seminar, I was able to do the last bits of CAD for the whole structure. I designed some MDF cross members to support the structure, and we got those all cut out on the laser cutter. Virtually everything is now ready to be manufactured and assembled now, yippee!
+At the beginning of class we got the flipper stopper, which Markus designed). During class, we assembled the sorting bins with wood glue. We also cut out the servo mounting bracket for the flipper flopper. Not much else done this class, we had the OSU engineering presentation today. During seminar, I was able to do the last bits of CAD for the whole structure. I designed some MDF cross members to support the structure, and we got those all cut out on the laser cutter. Virtually everything is now ready to be manufactured and assembled now, yippee!  
 ![CAD Overview](../CAD/CAD-Screenshots/cad_overview_screenshot.png)
 
 # Day 11
@@ -67,5 +68,5 @@ Mr. Small spent around half of class today talking about field trips and enginee
 
 # Day ???
 ## 1/19/26
-Today Yarema and Markus came to my house at 9:30 AM to work on the project, we got it fully working around 2 PM, although a lot of that time was waiting for glue to dry, lyrically analyzing J-pop, and going to Walmart to get glue because all the non-tacky glue my dad had was rock solid in the bottle.
-
+Today Yarema and Markus came to my house at 9:30 AM to work on the project, we got it fully working around 2 PM, although a lot of that time was waiting for glue to dry, lyrically analyzing J-pop, and going to Walmart to get glue because all the non-tacky glue my dad had was rock solid in the bottle.  
+![In Markus' car going to get glue](../photos-videos/acquiring_glue.jpg)
