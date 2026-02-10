@@ -84,7 +84,7 @@ The goal for this project was to make a device which would differentiate, sort, 
 
 [Tinkercad Circuits Designer](https://tinkercad.com/circuits)
 
-[Claude Sonnet](https://claud.ai)
+[Claude Sonnet](https://claude.ai)
 
 [Arduino Forum](https://forum.arduino.cc)
 
